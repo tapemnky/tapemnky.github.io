@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html lang="en">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="author" content="Martin Penas">
+	<meta name="description" content="mart.pm Home Page">
+	<title>mart.pm</title>
+	<link rel="stylesheet" href="./css/mart-pm-style.css">
+	<!-- https://fontawesome.com/docs/web/setup/host-yourself/svg-js -->
+	<script defer src="./js/brands.js"></script>
+	<script defer src="./js/fontawesome.js"></script>
+</head>
+
+<body>
+
+	<div class="container">
+		<h1>Oh, hai there!</h1>
+		<h2>Welcome to</h2>
+		<div class="header">
+			<img src="./images/m.jpg" alt="m">
+			<img src="./images/a.jpg" alt="a">
+			<img src="./images/r.jpg" alt="r">
+			<img src="./images/t.jpg" alt="t">
+			<img src="./images/dot.jpg" alt="dot">
+			<img src="./images/p.jpg" alt="p">
+			<img src="./images/m.jpg" alt="m">
+		</div>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+			magna aliqua. Neque sodales ut etiam sit amet nisl. Pellentesque elit ullamcorper dignissim cras tincidunt.
+			Gravida rutrum quisque non tellus orci ac auctor.</p>
+		<button>Learn More</button>
+		<div class="time">
+			Current date and time: <span id="date"></span> <span id="time"></span>
+		</div>
+	</div>
+	<script>
+		var dt = new Date();
+		var hours = dt.getHours();
+		var minutes = dt.getMinutes();
+		document.getElementById("time").innerHTML = hours + ":" + (minutes < 10 ? "0" + minutes : minutes);
+		var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+		var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+		var day = days[dt.getDay()];
+		var month = months[dt.getMonth()];
+		var date = dt.getDate();
+		var year = dt.getFullYear();
+		document.getElementById("date").innerHTML = day + ", " + month + " " + date + ", " + year;
+	</script>
+	<div class="footer">
+		<span class="brand"><a href="https://mastodon.me.uk/@tapemnky" title="Mastodon" target="_blank"
+				rel="noopener noreffer me"><i class="fa-brands fa-mastodon fa-xl icon-mastodon"></i></a></span>
+		<span class="credit">'Scrabble Tiles Alphabet' photos from Leo Reynolds <a
+				href="http://www.flickr.com/photos/lwr/sets/72157594512628242/" title="flickr"
+				target="_blank">flickr</a> group.</span>
+		<span class="credit">(Distibuted under 'Attribution-NonCommercial-ShareAlike 2.0' <a
+				href="http://creativecommons.org/licenses/by-nc-sa/2.0/" title="Creative Commons"
+				target="_blank">Creative Commons</a> licence.)</span>
+	</div>
+</body>
+
+</html>
