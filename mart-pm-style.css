@@ -1,0 +1,134 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #d8c8ad;
+}
+
+/* Container */
+.container {
+  max-width: 800px;
+  margin: 40px auto 0;
+  padding: 20px;
+  background-color: #faf8f3;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-size: 36px;
+  margin: 0;
+  padding: 0 0 20px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 24px;
+  margin: 0;
+  padding: 0 0 20px;
+  text-align: center;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin: 0 0 20px;
+  text-align: center;
+}
+
+button {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0069d9;
+}
+
+.time {
+  font-size: 14px;
+  color: #999;
+  margin-top: 20px;
+  text-align: center;
+}
+
+/* Container - Header */
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #cccccc;
+  padding: 55px;
+  margin-bottom: 50px;
+}
+
+.header img {
+  width: 75px;
+  height: 75px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* Footer */
+.footer {
+  text-align: right;
+  font-size: 12px;
+  color: #666;
+  padding: 10px;
+  margin-top: 700px;
+  background-color: #faf8f3;
+}
+
+.footer a {
+  color: #666;
+}
+
+.footer a:hover {
+  color: #000;
+}
+
+.footer span {
+  display: block;
+  margin-top: 10px;
+}
+
+/* Footer - credit */
+.credit {
+  margin-left: 10px;
+}
+
+.credit a {
+  color: #666;
+}
+
+.credit a:hover {
+  color: #000;
+}
+
+/* Mastodon */
+.icon-mastodon {
+  color: #563acc;
+}
+
+.brand a:link {
+  text-decoration: none;
+}
+
+.brand a:visited {
+  text-decoration: none;
+}
+
+.brand a:hover {
+  text-decoration: none;
+}
+
+.brand a:active {
+  text-decoration: none;
+}
